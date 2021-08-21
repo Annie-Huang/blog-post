@@ -15,6 +15,14 @@
   box-sizing: border-box;
 }
 
+/* The reason we set general things into body instead of html is that html generally have the following
+by default and we don't want to override it. Therefore, font-size should only set in the body
+other properties line front-family etc can be set in html if you want
+*/
+/*html {*/
+/*  font-size: 16px*/
+/*}*/
+
 body {
   margin: 0; /**/
   font-family: 'PT Serif', serif; /**/
