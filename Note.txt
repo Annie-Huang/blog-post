@@ -3,3 +3,33 @@ https://courses.kevinpowell.co/
 https://github.com/Annie-Huang/blog-post
 
 =====================================================
+
+The order css is going to look at putting style:
+1. Origin and Important
+2. Specificity
+3. Order of Appearance.
+
+That is why:
+    <div class="red blue">xxxx</div>
+    <div class="blue red">yyy</div>
+
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+
+Both show blue.
+Because of rule 3. Order of Appearance.
+
+------------------
+
+The order of origin  + !important:
+1. important user declarations
+2. important author declarations
+3. Animation
+4. Transitions
+5. Author declarations
+6. User declarations
+7. User agent declarations
