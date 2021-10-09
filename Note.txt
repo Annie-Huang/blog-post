@@ -33,3 +33,16 @@ The order of origin  + !important:
 5. Author declarations
 6. User declarations
 7. User agent declarations
+
+
+------------------
+
+This is a great solution to put thing at the right bottom corner
+margin-left: auto => would work outside of a grid or flex
+margin-top: auto => will have no impact.
+  margin-top: auto;
+  margin-left: auto;
+
+or:
+  align-self: end;
+  justify-self: end;
